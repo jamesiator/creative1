@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.page {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.content-container {
+  background: rgba(246,255,242,0.8);
+}
+
+.page-header {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 4em;
+  font-family: 'Patua One';
+  text-decoration: underline;
+}
+
+.content {
+  padding: 80px 0 50px 0;
+  width: 80%;
+  margin: auto;
+  font-size: 1.2em;
+  font-family: 'Roboto';
+  opacity: 100%;
+  text-align: center;
+}
+
+.main {
+  text-align: left;
+}
+
+.content h1, h2, h3, h4, h5 {
+  font-family: 'Patua One';
+}
+
+.content ul {
+  padding-left: 30px;
+}
+
+.content img {
+  width: 100%;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.destination-box {
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  color: black;
+  width: 100%;
+  text-align: center;
+  font-family: 'Patua One';
+}
+
+.links a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.destination-box:hover {
+  font-size: 1.05em;
+}
+
+.info-container {
+  width: 100%;
+  text-align: center;
+  font-family: 'Patua One';
+}
+
+.info {
+  padding-top: 10px;
+  padding-bottom: 20PX;
+  width: 95%;
+  height: 90%;
+  margin: auto;
+  background-color: #f2f5df;
+  border-radius: 10px;
+}
+
+.info p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.small {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: .7em;
+}
+
+.info:hover {
+  background-color: #e3e6d1;
+}
+
+.footer-top {
+  height: 10px;
+  background-color: #64bf43;
+}
+
+.footer {
+  height: 120px;
+  background-color: #373836;
+}
+
+.credits {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #848582;
+}
+
+/* Tablet */
+@media screen and (min-width: 501px) {
+  .destination-box {
+    width: 50%;
+  }
+  .info-container {
+    width: 50%;
+  }
+  .footer {
+    height: 100px;
+  }
+  .content-container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .page-header {
+    text-decoration: overline underline;
+  }
+  .links {
+    justify-content: space-between;
+  }
+  .destination-box {
+    width: 24%;
+  }
+  .info-container {
+    width: 25%;
+  }
+  .content img {
+    width: 400px;
+  }
+  .footer {
+    height: 80px;
+  }
+  .page {
+    padding-top: 30px;
+  }
+  .content-container {
+    width: 75%;
+    margin: auto;
+  }
+}
